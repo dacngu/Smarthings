@@ -1,0 +1,7 @@
+zigbeeManufacturer:
+    - id: "LDS/ZBT-CCTSwitch-D0001"
+    deviceLabel: EcoSmart Remote Control
+    manufacturer: LDS
+    model: ZBT-CCTSwitch-D0001
+    deviceProfileName: four-buttons-battery
+  
