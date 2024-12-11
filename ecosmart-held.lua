@@ -66,6 +66,21 @@ local emit_pushed_event = function(button_name, device)
     log.warn("Attempted to emit button event for unknown button: " .. button_name)
   end
 end
+
+-- Adding the held capacities
+
+local emit_held_event = function(button_name, device)
+  local additional_fields = {
+    state_change = true
+  }
+  local event = capabilities.button.button.held(additional_fields)
+  local comp = device.profile.components[button_name]
+  if comp ~= nil then
+    device:emit_component_event(comp, event)
+  else
+    log.warn("Attempted to emit button event for unknown button: " .. button_name)
+  end
+end
 -- This code is used to skip the Held function and assign it to push function.
 
 local function moveToColorTemperature_handler(driver, device, zb_rx)
