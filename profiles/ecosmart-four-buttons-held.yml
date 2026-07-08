@@ -10,27 +10,53 @@ components:
         version: 1
     categories:
       - name: RemoteController
+
   - id: button1
     capabilities:
       - id: button
         version: 1
+        config:
+          values:
+            - key: "button.supportedButtonValues"
+              value:
+                - pushed
     categories:
       - name: RemoteController
+
   - id: button2
     capabilities:
       - id: button
         version: 1
+        config:
+          values:
+            - key: "button.supportedButtonValues"
+              value:
+                - pushed
+                - held
     categories:
       - name: RemoteController
+
   - id: button3
     capabilities:
       - id: button
         version: 1
+        config:
+          values:
+            - key: "button.supportedButtonValues"
+              value:
+                - pushed
+                - held
     categories:
       - name: RemoteController
+
   - id: button4
     capabilities:
       - id: button
         version: 1
+        config:
+          values:
+            - key: "button.supportedButtonValues"
+              value:
+                - pushed
     categories:
       - name: RemoteController
