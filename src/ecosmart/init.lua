@@ -45,7 +45,7 @@ We generate button3 `pushed` events but only if not preceded by a MoveToLevelWit
 Button 4
 --------
 
-The fourth button sends a MoveToLevelWithOnOff command followed by MoveToColorTemperature. We generate button4 `pressed`
+The fourth button sends a MoveToLevelWithOnOff command followed by MoveToColorTemperature. We generate button4 `pushed`
 events when we receive the MoveToLevelWithOnOff command and we ignore the following MoveToColorTemperature command so
 that we don't generate an erroneous button3 `pushed` event.
 --]]
