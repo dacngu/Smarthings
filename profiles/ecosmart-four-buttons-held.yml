@@ -1,4 +1,4 @@
-name: four-buttons-battery
+name: ecosmart-four-buttons-held
 components:
   - id: main
     capabilities:
